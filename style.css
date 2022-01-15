@@ -82,7 +82,7 @@ section .banner .banner_left .banner_title {
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.latest-product-container {
+.latest-course-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 30px;
@@ -136,8 +136,8 @@ footer {
 }
 /* ---------     -----------------
 ---------responsiveness section---------- */
-
-@media (max-width: 1150px) {
+/* Media Queries */
+@media (max-width: 1188px) {
   .latest-course-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -145,9 +145,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 850px) {
-  .latest-product-container {
+@media (max-width: 888px) {
+  .latest-course-container {
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
   .team {
     grid-template-columns: repeat(1, 1fr);
